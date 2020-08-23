@@ -1,0 +1,44 @@
+{
+    "name": "anomaly/forms-module",
+    "type": "streams-addon",
+    "description": "Easily build and manage custom drop-in forms.",
+    "keywords": [
+        "streams module",
+        "streams addon",
+        "module"
+    ],
+    "homepage": "http://pyrocms.com/",
+    "license": "https://pyrocms.com/pro/license",
+    "assets": {
+        "icon": "marketplace/icon.png",
+        "screenshots": []
+    },
+    "authors": [
+        {
+            "name": "PyroCMS, Inc.",
+            "homepage": "http://pyrocms.com/",
+            "role": "Owner"
+        },
+        {
+            "name": "Ryan Thompson",
+            "homepage": "http://ryanthepyro.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "docs": "https://pyrocms.com/documentation/forms-module",
+        "forum": "https://pyrocms.com/forum/channels/forms-module",
+        "slack": "https://pyrocms.com/slack",
+        "issues": "https://github.com/pyrocms/pyrocms/issues?q=is:issue is:open [forms-module]",
+        "source": "https://github.com/anomalylabs/forms-module"
+    },
+    "require": {
+        "anomaly/streams-platform": "^1.3",
+        "anomaly/standard_form-extension": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\FormsModule\\": "src/"
+        }
+    }
+}

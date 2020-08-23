@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <button class="close" data-dismiss="modal">
+        <span>&times;</span>
+    </button>
+    <h4 class="modal-title">{{ trans('module::message.choose_form_handler') }}</h4>
+</div>
+
+<div class="modal-body">
+
+    {% include "streams::modals/filter" %}
+
+    <ul class="nav nav-pills nav-stacked">
+        {% for extension in extensions %}
+            <li class="nav-item">
+                <a href="{{ url_to('admin/forms/create?form_handler=' ~ extension.namespace) }}" class="nav-link">
+                    <strong>{{ trans(extension.getTitle()) }}</strong>
+                    <br>
+                    <small>{{ trans(extension.getDescription()) }}</small>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
